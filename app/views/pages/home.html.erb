@@ -1,0 +1,57 @@
+<%
+  content_for :title, "Our Father's Project - Christian Ministry Programs in Columbus, Ohio"
+  @current_section = :home
+%>
+
+<div id="hero">
+  <div class="row">
+    <div class="story four columns">
+      <h1>
+        <span>Battling</span>
+        <span>fatherlessness</span>
+        <span>and poverty.</span>
+      </h1>
+      <p>
+        <span>For over a decade, we've</span><br>
+        <span>been helping poverty-</span><br>
+        <span>stricken, fatherless youth</span><br>
+        <span>break free from</span><br>
+        <span>generations of destructive</span><br>
+        <span>behavior. All as a family.</span>
+      </p>
+    </div>
+
+    <div class="seven columns offset-by-one">
+      <div class="sign-up">
+        <h2>Sign up for Our Email Newsletter</h2>
+        <p>Learn about our work and stay in touch.</p>
+        <%= render "pages/email_newsletter_form" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="content">
+  <div class="row">
+    <div id="story" class="seven columns">
+      <h2>The Mission</h2>
+      <p class="lead">
+        <strong>Our Father’s Project's</strong> mission is to develop Christ-centered programs to address the needs
+        of low-income inner-city Columbus persons.
+      </p>
+      <p>
+        We provide mentoring, support, and friendship through
+        <%= link_to "The Project", the_project_path %> and are always looking for opportunities to expand our
+        ministry.
+      </p>
+      <p class="more">
+        <a href="/about">More about us &rsaquo;</a>
+      </p>
+    </div>
+    <div id="story-photos" class="five columns">
+      <p>
+        <%= image_tag "home_dad.jpg", alt: "" %>
+      </p>
+    </div>
+  </div>
+</div>

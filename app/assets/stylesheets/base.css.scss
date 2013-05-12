@@ -1,0 +1,66 @@
+@import 'foundation_and_overrides';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Lato, "Helvetica Neue", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 33px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+pre {
+  margin-bottom: 20px;
+}
+
+ul,
+ol {
+  margin-left: 25px;
+}
+
+dl {
+  dt {
+    font-weight: bold;
+  }
+
+  dd {
+    padding-left: 20px;
+  }
+}
+
+address {
+  font-style: normal;
+  line-height: 1.6em;
+}
+
+abbr {
+  border-bottom: 0;
+}
+
+.disclaimer {
+  font-size: 13px;
+}

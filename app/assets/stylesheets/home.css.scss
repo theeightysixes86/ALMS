@@ -1,0 +1,158 @@
+@import "settings";
+
+#home {
+  overflow: hidden;
+
+  #global {
+    background: url(/assets/navbar_background.png);
+    position: absolute;
+  }
+
+  #hero {
+    background: #EBE5D7 url(/assets/hero_background.jpg) no-repeat center top;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+    -webkit-background-size: cover;
+            background-size: cover;
+    overflow: hidden;
+    padding-top: 40px;
+
+    .row {
+      position: relative;
+      z-index: 1;
+
+      .story {
+        color: #fff;
+
+        h1 {
+          color: #fff;
+          font-size: 38px;
+          font-weight: normal;
+          margin-bottom: 18px;
+          padding-bottom: 18px;
+
+          span {
+            background: rgb(167, 0, 0); // Fallback for older browsers
+            background: rgba(167, 0, 0, 0.8);
+            line-height: 1.6em;
+            padding: 5px 10px;
+          }
+        }
+
+        p {
+          font-size: 17px;
+          line-height: 1.3em;
+             -moz-text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+              -ms-text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+               -o-text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+          -webkit-text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+                  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+
+          span {
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.7);
+            line-height: 1.8em;
+            padding: 5px 10px;
+          }
+        }
+      }
+
+      .sign-up {
+        background: url(/assets/home_sign_up_background.png);
+           -mox-border-radius: 10px;
+            -ms-border-radius: 10px;
+             -o-border-radius: 10px;
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
+        margin: 250px 0 15px;
+        padding: 15px;
+
+        h2 {
+          font-size: 19px;
+          margin: 0 0 5px;
+          text-transform: uppercase;
+        }
+
+        .disclaimer {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  #content {
+    background: #D8D8CC url(/assets/home_content_background.jpg);
+
+    #story {
+      padding-top: 40px;
+
+      h2 {
+        font-size: 24px;
+      }
+
+      .more {
+        font-size: 19px;
+      }
+    }
+
+    #story-photos {
+      background: url(/assets/home_photos_background.png) no-repeat;
+      height: 348px;
+
+      img {
+        border: 1px solid #ccc;
+        margin: 38px 0 0 9px;
+      }
+    }
+  }
+}
+
+// Small screen
+@media only screen and (max-width: 767px) {
+  #home {
+    #global {
+      position: static;
+    }
+
+    #hero {
+      padding-top: 0;
+
+      .row {
+        .story {
+          h1 {
+            font-size: 23px;
+            margin-bottom: 50px;
+            overflow: hidden;
+
+            span {
+              float: left;
+              padding: 3px 0 3px 6px;
+
+              &:last-child {
+                padding-right: 10px;
+              }
+            }
+
+            br {
+              display: none;
+            }
+          }
+
+          p {
+            font-size: 15px;
+          }
+        }
+
+        .sign-up {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    #content {
+      #story {
+        padding-top: 10px;
+      }
+    }
+  }
+}

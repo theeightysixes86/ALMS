@@ -1,0 +1,66 @@
+<%
+  content_for :title, "Donate to Our Father's Project"
+  @current_section = :donate
+%>
+
+<div class="twelve columns">
+  <h1>Donate</h1>
+  <p class="lead">
+    We are never short on opportunities to have a positive influence in the lives of our members. Financial
+    contributions from supporters like you make this possible.
+  </p>
+  <p>
+    Our Father's Project is currently filing for 501(c)(3) status with the
+    <abbr title="Internal Revenue Service">IRS</abbr>, and legally we are able to extend full tax exemption for any
+    donations made to our organization in the meantime.
+  </p>
+</div>
+
+<div class="six columns">
+  <h2>Online donations</h2>
+  <p>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="78M4489YK34K6">
+      <input type="submit" name="submit" value="Donate Online" class="button">
+      &nbsp; Securely&nbsp;via&nbsp;PayPal
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      <br>
+      <br>
+      <%= image_tag "cc_logos.png",
+                    alt: "We accept Maestro, MasterCard, Visa, American Express, Discover Card, and Bank Card" %>
+    </form>
+  </p>
+  <p>
+    <em><strong>Don't have a PayPal account?</strong> Click the &quot;Donate Online&quot; button above and look for the
+    option to give with your credit card.</em>
+  </p>
+</div>
+
+<div class="six columns">
+  <h2>Mail us a check</h2>
+  <p>
+    Make checks or money orders payable to <em>Our&nbsp;Father's&nbsp;Project</em>.
+  </p>
+  <address>
+    Our Father's Project<br>
+    P.O. Box 82145<br>
+    Columbus, Ohio 43202
+  </address>
+</div>
+
+<div class="twelve columns">
+  <h2>How your donation helps</h2>
+  <p>
+    These are examples of the many ways that your donations help those who are struggling with poverty:
+  </p>
+  <ul>
+    <li>Meals at The Project</li>
+    <li>Location for The Project</li>
+    <li>Clothing</li>
+    <li>Transportation</li>
+    <li>Professional Christian counseling</li>
+    <li>Education expenses</li>
+    <li>Other basic living needs</li>
+  </ul>
+</div>

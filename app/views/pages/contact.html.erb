@@ -1,0 +1,36 @@
+<%
+  content_for :title, "Contact Our Father's Project"
+  @current_section = :contact
+  @current_subsection = :contact
+%>
+
+<% content_for :sidebar do %>
+  <%= render "pages/about_local_navigation" %>
+<% end %>
+
+<div class="twelve columns">
+  <h1>Contact Us</h1>
+  <p class="lead">
+    Have a question or need more information? Feel free to reach out to us.
+  </p>
+
+  <h2>Email</h2>
+  <p>
+    <%= mail_to "staff@ourfathersproject.com" %></li>
+  </p>
+
+  <hr>
+
+  <h2>Address</h2>
+  <address>
+    Our Father's Project<br>
+    P.O. Box 82145<br>
+    Columbus, Ohio 43202
+  </address>
+
+  <hr>
+
+  <h2>Sign up for Our Newsletter</h2>
+  <p>Learn about our work and stay in touch.</p>
+  <%= render "pages/email_newsletter_form" %>
+</div>

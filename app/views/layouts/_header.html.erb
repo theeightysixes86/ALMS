@@ -1,0 +1,37 @@
+<header>
+  <div class="row">
+    <div id="global-menu">
+      <a href="#global">Menu</a>
+    </div>
+    <div id="logo">
+      <%= link_to root_path do %>
+        <%= image_tag "logo.png", alt: "Our Father's Project" %>
+      <% end %>
+    </div>
+    <div id="tagline">
+      Bringing <strong>Christ</strong> to the <em><i class="ohio icon"></i> Heart</em> of inner-city Columbus, Ohio
+    </div>
+  </div>
+</header>
+
+<div id="global">
+  <div class="row">
+    <ul class="nav-bar">
+      <li class="<%= nav_class :home, @current_section %>">
+        <%= link_to "Home", root_path  %>
+      </li>
+      <li class="<%= nav_class :the_project, @current_section %>">
+        <%= link_to "The Project", the_project_path  %>
+      </li>
+      <li class="<%= nav_class :about, @current_section %>">
+        <%= link_to "About Us", about_path  %>
+      </li>
+      <li class="<%= nav_class :contact, @current_section %>">
+        <%= link_to "Contact Us", contact_path  %>
+      </li>
+      <li>
+        <%= link_to "Donate", donate_path, class: "donate" %>
+      </li>
+    </ul>
+  </div>
+</div>

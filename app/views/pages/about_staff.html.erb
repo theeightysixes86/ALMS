@@ -1,0 +1,56 @@
+<%
+  content_for :title, "Our Father's Project Staff"
+  @current_section = :about
+  @current_subsection = :staff
+%>
+
+<% content_for :sidebar do %>
+  <%= render "pages/about_local_navigation" %>
+<% end %>
+
+<div class="twelve columns">
+  <h1>Staff</h1>
+  <p class="lead">
+    Our staff consists of husband and wife Brian and Cheryl Fraley. Brian and Cheryl moved to Columbus in the late 90s
+    to follow their calling of ministering to youths in the inner city. They both continue to pour their lives into
+    this ministry.
+  </p>
+</div>
+
+<div class="personal-bio twelve columns">
+  <div class="row">
+    <div class="three columns">
+      <%= image_tag "brian_fraley.jpg", alt: "" %>
+    </div>
+    <div class="bio nine columns">
+      <h2>
+        Brian Fraley<br>
+        <em>Executive Director</em>
+      </h2>
+      <p>
+        Since 1997, Brian has been called to serve the homeless, prostitutes, and inner city youth and adults in
+        Columbus, Ohio. Brian's heart is in empowering other people to expand the reach of the Our Father's Project
+        ministry.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="personal-bio twelve columns">
+  <div class="row">
+    <div class="three columns">
+      <%= image_tag "cheryl_fraley.jpg", alt: "" %>
+    </div>
+    <div class="bio nine columns">
+      <h2>Cheryl Fraley<br>
+        <em>Staff</em>
+      </h2>
+      <p>
+        Cheryl's ministry work in Columbus began as Administrative Assistant to the Director for
+        <%= link_to "Better Way Ministries", "http://www.thebetterway.webs.com/" %>. Now she provides administrative
+        support for the initiatives of Our Father's Project. Her heart has been in line with Brian's in serving the
+        neglected and forgotten in inner city Columbus.
+      </p>
+    </div>
+  </div>
+</div>

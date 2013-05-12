@@ -1,0 +1,16 @@
+<div id="local" class="section">
+  <h3><%= link_to "About Us", about_path %></h3>
+  <nav>
+    <ul class="side-nav">
+      <li class="<%= nav_class :staff, @current_subsection %>">
+        <%= link_to "Staff", about_staff_path %>
+      </li>
+      <li class="<%= nav_class :board, @current_subsection %>">
+        <%= link_to "Board of Directors", about_board_path %>
+      </li>
+      <li class="<%= nav_class :contact, @current_subsection %>">
+        <%= link_to "Contact Us", contact_path %>
+      </li>
+    </ul>
+  </nav>
+</div>

@@ -1,0 +1,93 @@
+<%
+  content_for :title, "The Project - Youth Mentoring Ministry in Columbus, Ohio"
+  @current_section = :the_project
+%>
+
+<div id="the-project">
+  <div id="the-project-hero">
+    <div class="row">
+      <div class="logo five columns">
+        <%= image_tag "the_project_logo.png", alt: "His word is truth. - John 17" %>
+      </div>
+      <div class="content seven columns">
+        <div class="summary">
+          <h1>The Project</h1>
+          <p class="lead">
+            The Project is a relational ministry that provides mentoring and discipleship for young men on the south side
+            of Columbus, Ohio. Most of these young men are growing up in homes with generational poverty, no father,
+            and family members struggling with substance abuse.
+          </p>
+          <p>
+            We work together to break generations of destructive behavior, fight against
+            poverty, create and nurture spiritual growth, and create a family atmosphere within the group.
+          </p>
+          <p>
+            As these people grow up, they give back to the younger generation of The&nbsp;Project and have a positive
+            influence on their communities.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="the-project-summary" class="row">
+    <div class="twelve columns">
+      <h2>What We Do</h2>
+      <p class="lead">We meet as a group on Friday nights, play sports and games together, enjoy a family meal, pray, and learn practical lessons from God's Word in scripture. Many who get involved describe The Project as family.</p>
+      <p>Our reach also extends beyond Friday nights. As we get to know everyone's families, we often find needs unmet and opportunities to mentor and speak into their lives. God has always provided, and we are amazed to see his work done.</p>
+    </div>
+  </div>
+
+  <div id="the-project-stories" class="row">
+    <div class="four columns">
+      <p class="photo">
+        <%= image_tag "the_project_dinner.jpg", alt: "" %>
+      </p>
+      <p>
+        Quantity time is quality time: we share a meal together consistently&mdash;every Friday&mdash;as a family.
+      </p>
+    </div>
+    <div class="four columns">
+      <p class="photo">
+        <%= image_tag "the_project_lesson.jpg", alt: "" %>
+      </p>
+      <p>
+        We study short passages of scripture, pray, and discuss how we can apply the Gospel to our lives.
+      </p>
+    </div>
+    <div class="four columns">
+      <p class="photo">
+        <%= image_tag "the_project_basketball.jpg", alt: "" %>
+      </p>
+      <p>
+        We often unwind with games of basketball, football, chess, and other games and activities.
+      </p>
+    </div>
+  </div>
+
+  <div id="the-project-testimonials" class="row">
+    <div class="twelve columns">
+      <h2>What The Project Means</h2>
+    </div>
+    <div class="six columns">
+      <blockquote class="primary">
+        <p>It means family. It’s life lessons that I can apply to my life, and it’s a time I can look forward to throughout the whole week. It’s a positive feeling that I’m going to accomplish something.</p>
+        <cite>Odell, 22 years old</cite>
+      </blockquote>
+    </div>
+    <div class="six columns">
+      <blockquote>
+        <p>I thought it was pretty cool that no matter what you do, there’s always somebody there to lift you up and give you something positive out of what you did and a lesson learned. Whenever there’s nobody there to lift me up or hold me accountable for things I’m doing wrong, I can come here and know that there’s people that care about me that can lead me in the right direction.</p>
+        <cite>Lester</cite>
+      </blockquote>
+    </div>
+  </div>
+
+  <div class="row">
+    <div id="the-project-email-newsletter" class="eight columns">
+      <h2>Sign up for Our Newsletter</h2>
+      <p>Hear stories about God's work through our ministry. Learn how to get involved. Stay up to date on needs as they arise.</p>
+      <%= render "pages/email_newsletter_form" %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,100 @@
+<%
+  content_for :title, "About Our Father's Project"
+  @current_section = :about
+%>
+
+<% content_for :sidebar do %>
+  <%= render "pages/about_local_navigation" %>
+<% end %>
+
+<div class="twelve columns">
+  <h1>About Us</h1>
+  <p class="lead">
+    <strong>Our Father's Project</strong> is a Christian non-profit organization based in Columbus, Ohio. We have been
+    serving low-income children, teens, young adults, and families for over a decade through our main program,
+    <%= link_to "The Project", the_project_path %>.
+  </p>
+  <p class="photo">
+    <%= image_tag "board_and_staff.jpg", alt: "" %><br>
+    <em>Members of the Our Father's Project board of director and staff: Chris Peters, Randy Cisler, Mark Phillips,
+    Cheryl Fraley, and Brian Fraley.</em>
+  </p>
+  <p>
+    Our Father's Project is currently filing for 501(c)(3) status with the
+    <abbr title="Internal Revenue Service">IRS</abbr>, and legally we are able to extend full tax exemption to
+    any donations made to our organization in the meantime.
+  </p>
+
+  <h2>Official Mission Statement</h2>
+  <p>
+    To develop Christ-centered programs to address the needs of low-income inner-city Columbus persons.
+  </p>
+
+  <h2>History</h2>
+  <p>
+    Our Father's Project already has a history that has touched many lives across Columbus, Ohio, and many hands have
+    shaped it to become the organization that it is now.
+  </p>
+  <h3>U-Rev and the Garden Church</h3>
+  <p>
+    It all started with a program called U-Rev at the
+    <%= link_to "Garden Church", "http://thegardenchurch.webs.com/" %> in the Short North neighborhood.
+    <%= link_to "Brian Fraley", about_staff_path %> and several leaders of the church started this program to form
+    relationships and minister to children and teens at the
+    <%= link_to "Sullivant Gardens Recreation Center", "http://parks.columbus.gov/SullivantGardenCenter.aspx" %> in
+    South Columbus.
+  </p>
+  <h3>The Project</h3>
+  <p>
+    After several years, the Garden Church decided to focus its efforts on the Short North, and Brian and his wife,
+    Cheryl, decided to instead keep the ministry alive in South Columbus.
+  </p>
+  <p>
+    This refreshed program became known as <%= link_to "The Project", the_project_path %>. Children and teens in the
+    area continued to attend The Project regularly at the recreation center, play sports together, build friendships
+    through fellowship, and learn about the Gospel of Jesus Christ. This all still happens to this day.
+  </p>
+  <p class="photo">
+    <%= image_tag "the_project_lesson_bw.jpg", alt: "" %><br>
+    <em>On Friday nights, The Project studies passages from the Bible and discusses the concepts and how to apply them
+    to everyday life.</em>
+  </p>
+  <p>
+    The Project also uses its resources to help fulfill unmet needs like clothing, winter wear, medical treatments, and
+    Christmas gifts.
+  </p>
+  <h3>Fostering a second generation</h3>
+  <p>
+    The story doesn't end there though. Through longevity, some of the original youths who have been around for a dozen
+    years are now adults, and they are starting to mentor to the next generation of younger kids. The Project has also
+    had the opportunity to network with other organizations to assist these young men and women with the following:
+  </p>
+  <ul>
+    <li>Gaining skills from job mentoring</li>
+    <li>Earning <abbr title="general equivalency degree">GED</abbr>s</li>
+    <li>Enrolling in community college</li>
+    <li>Seeking extra help through Christian counseling</li>
+  </ul>
+  <p class="photo">
+    <%= image_tag "older_generation_men.jpg", alt: "" %><br>
+    <em>Some of the young men who have been with The Project for many years are giving back and mentoring a younger
+    generation.</em>
+  </p>
+  <h3>Our Father's Project non-profit organization</h3>
+  <p>
+    In the midst of all of this, Our Father's Project was formed as a non-profit organization to govern these programs
+    and explore opportunities for growth and expansion. A <%= link_to "board of directors", about_board_path %> has
+    formed and is in the process of filing for 501(c)(3) status with the
+    <abbr title="Internal Revenue Service">IRS</abbr>.
+  </p>
+  <h3>Future</h3>
+  <p>
+    Our Father's Project is seeking to build programs and empower its <%= link_to "staff", about_staff_path %> and
+    members to expand the Kingdom of God and find opportunities to provide a loving, fatherly relationship for those in
+    need.
+  </p>
+  <p>
+    A goal of this organization is to be able to extend its experience and resources to other local non-profits who are
+    seeking to fight poverty and spread the Gospel.
+  </p>
+</div>

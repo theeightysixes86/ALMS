@@ -1,0 +1,106 @@
+<%
+  content_for :title, "Our Father's Project Board of Directors"
+  @current_section = :about
+  @current_subsection = :board
+%>
+
+<% content_for :sidebar do %>
+  <%= render "pages/about_local_navigation" %>
+<% end %>
+
+<div class="twelve columns">
+  <h1>Board of Directors</h1>
+  <p class="lead">
+    The Board of Directors is the governing authority of Our Father's Project, and it is responsible for
+    supervision, control, and direction of the affairs of our organization. The Board determines our
+    general policies, actively promotes our goals and objectives, raises funds, and supervises finances.
+  </p>
+</div>
+
+<div class="personal-bio twelve columns">
+  <div class="row">
+    <div class="three columns">
+      <%= image_tag "mark_phillips.jpg", alt: "" %>
+    </div>
+    <div class="bio nine columns">
+      <h2>
+        Mark Phillips<br>
+        <em>President</em>
+      </h2>
+      <p>
+        Mark has decades of experience in both church leadership and in the business world&mdash;and he's funny.
+      </p>
+      <p>
+        Mark is originally from Akron, Ohio, and accepted Christ in 1973. He married his wife, Jan, in 1984, and they
+        have two grown children, A.J. and Jennie.
+      </p>
+      <p>
+        Currently, Mark is the director of small groups at
+        <%= link_to "Sycamore Creek Church", "http://www.sycamorecreek.org/" %> in Pickerington, Ohio. He has also
+        served there as the Director of Student Ministries and Director of Leadership. He also often preaches the
+        Sunday morning messages, and is a gifted communicator both to small and large groups.
+      </p>
+      <p>
+        He also is owner and managing partner of FPL Financial Strategies,
+        <abbr title="Limited Liability Company">LLC</abbr>, a firm that does financial advising.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="personal-bio twelve columns">
+  <div class="row">
+    <div class="three columns">
+      <%= image_tag "chris_peters.jpg", alt: "" %>
+    </div>
+    <div class="bio nine columns">
+      <h2>Chris Peters<br>
+        <em>Secretary</em>
+      </h2>
+      <p>
+        Chris has been participating in <%= link_to "The Project", the_project_path %> ministry for over 4 years.
+        God has transformed him from &quot;guy who doesn't feel like he fits in&quot; to a leader of the ministry and
+        Secretary of the Board.
+      </p>
+      <p>
+        He has made a career of web design and marketing for over a decade and heads a newly-formed Technology Team
+        at <%= link_to "Good Shepherd Evangelical Lutheran Church", "http://www.goodshepherd-elca.com/" %>, his church
+        in Springfield, Ohio.
+      </p>
+      <p>
+        Chris grew up in Grove City, Ohio, and attended college at Capital University in nearby Columbus. He became a
+        Christian in 2006 and has been amazed at what Jesus has accomplished in his life since. Chris convinced his
+        wife, Kristen, to marry him in 2012. Chris and Kristen now live in Springfield, Ohio.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="personal-bio twelve columns">
+  <div class="row">
+    <div class="three columns">
+      <%= image_tag "randy_cisler.jpg", alt: "" %>
+    </div>
+    <div class="bio nine columns">
+      <h2>Randy Cisler<br>
+        <em>Treasurer</em>
+      </h2>
+      <p>
+        Randy met Brian and Cheryl Fraley over a decade ago and was involved with
+        <%= link_to "The Project", the_project_path %> ministry for 9 years. After a break, he is honored to return
+        and serve as Treasurer of the Board.
+      </p>
+      <p>
+        He has founded several businesses since 1976 and currently owns and operates Tackle Your List, as well as
+        Cisler Lawn Care. Randy's gifts as a business leader bring much practical wisdom to the board and skills with
+        QuickBooks.
+      </p>
+      <p>
+        Randy grew up in Canton, Ohio, and earned a mechanical engineering degree at The Ohio State University, and
+        owned Midwest Snacks for 21 years. He was born again at age 6 at a Baptist Bible school. He and his wife, Beckie,
+        were married in 1972, raised 2 children, and now enjoy their 5 grandchildren. Randy and Beckie are members of
+        <%= link_to "Heritage Christian Church", "http://www.heritagecc.org/" %> in Westerville, Ohio.
+      </p>
+    </div>
+  </div>
+</div>
