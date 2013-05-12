@@ -20,3 +20,18 @@
 
 # Ignore Mac stuff
 .DS_Store
+
+/design/*
+/public/system/*
+/public/assets/*.js
+/public/assets/*.css
+/public/assets/*.jpg
+/public/assets/*.png
+/public/assets/*.gif
+/public/assets/*.gz
+/public/assets/dataTables/*
+/public/assets/jquery-ui/*
+/public/assets/*.ico
+/public/assets/*.pdf
+/app/assets/*
+/vendor/assets/*
